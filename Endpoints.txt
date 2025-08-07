@@ -1,0 +1,139 @@
+Endpoints de Productos
+
+Metodo: GET
+Descripción: Listar todos los productos activos
+Endpoint: http://localhost:3000/api/productos
+Body: No Aplica
+
+Metodo: GET
+Descripción: Obtener producto por referencia
+Endpoint: http://localhost:3000/api/productos/ref/AP2500
+Body: No Aplica
+
+Metodo: POST
+Descripción: Crear nuevo producto
+Endpoint: http://localhost:3000/api/productos
+Body: 
+
+{
+  "referencia": "AP25001",
+  "descripcion": "CARTUCHO REEMPLAZO PUREAMBIENCE PRUEBAS",
+  "categoria_id": 1,
+  "clase_id": 1,
+  "precio": 999000,
+  "stock": 80,
+  "activo": 1
+}
+
+Metodo: PUT
+Descripción: Actualizar producto por referencia
+Endpoint: http://localhost:3000/api/productos/ref/AP25001
+Body: 
+
+{
+  "referencia": "AP25001",
+  "descripcion": "CARTUCHO REEMPLAZO PUREAMBIENCE PRUEBAS",
+  "categoria_id": 1,
+  "clase_id": 1,
+  "precio": 899000,
+  "stock": 79,
+  "activo": 1
+}
+
+Metodo: DELETE
+Descripción: Eliminar producto por referencia
+Endpoint: http://localhost:3000/api/productos/ref/AP25001
+Body: No Aplica
+======================
+Endpoints de Usuarios
+
+Metodo: GET
+Descripción: Listar todos los usuarios activos
+Endpoint: http://localhost:3000/api/usuarios
+Body: No Aplica
+
+Metodo: GET
+Descripción: Obtener usuario por username
+Endpoint: http://localhost:3000/api/usuarios/admin1
+Body: No Aplica
+
+Metodo: POST
+Descripción: Crear nuevo usuario
+Endpoint: http://localhost:3000/api/usuarios
+Body: 
+
+{
+  "username": "kelly_1996",
+  "nombre_completo": "Kelly Zapata Pruebas",
+  "password": "BeLeon2015*",
+  "rol_id": 2
+}
+
+Metodo: PUT
+Descripción: Actualizar usuario por username
+Endpoint: http://localhost:3000/api/usuarios/kelly_1996
+Body: 
+
+{
+  "nombre_completo": "Kelly Zapata Pruebas",
+  "password": "nuevaClave123",
+  "rol_id": 2,
+  "activo": 1
+}
+
+Metodo: DELETE
+Descripción: Eliminar usuario por username
+Endpoint: http://localhost:3000/api/usuarios/kelly_1996
+Body: No Aplica
+==========================
+Endpoints de Clientes
+
+Metodo: GET
+Descripción: Listar todos los clientes
+Endpoint: http://localhost:3000/api/clientes
+Body: No Aplica
+
+Metodo: GET
+Descripción: Obtener cliente por documento
+Endpoint: http://localhost:3000/api/clientes/3564790
+Body: No Aplica
+
+Metodo: POST
+Descripción: Crear nuevo cliente
+Endpoint: http://localhost:3000/api/clientes
+Body: 
+
+{
+  "documento": "1234567890",
+  "id_tipodocumento": "CC",
+  "nombre_completo": "Laura Ramírez",
+  "sexo": "F",
+  "fecha_nacimiento": "1990-05-10",
+  "correo": "laura@example.com",
+  "telefono": "3105551234",
+  "id_departamento": 5,
+  "id_ciudad": 12,
+  "direccion": "Cra 45 #12-34"
+}
+
+Metodo: PUT
+Descripción: Actualizar cliente por documento
+Endpoint: http://localhost:3000/api/clientes
+Body: 
+
+{
+  "id_tipodocumento": "CC",
+  "nombre_completo": "Laura Ramírez",
+  "sexo": "F",
+  "fecha_nacimiento": "1990-05-10",
+  "correo": "laura@example.com",
+  "telefono": "3105551234",
+  "id_departamento": 5,
+  "id_ciudad": 12,
+  "direccion": "Cra 45 #12-23"
+}
+
+Metodo: DELETE
+Descripción: Eliminar cliente por documento
+Endpoint: http://localhost:3000/api/clientes/1234567890
+Body: No Aplica

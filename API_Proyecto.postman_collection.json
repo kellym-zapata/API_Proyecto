@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "419caf18-e7e6-41ff-a814-47c858074828",
+		"name": "API_Proyecto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23270929"
+	},
+	"item": [
+		{
+			"name": "Consultar_Producto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/productos/ref/AP2500",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"productos",
+						"ref",
+						"AP2500"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear_Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"referencia\": \"AP25001\",\r\n  \"descripcion\": \"CARTUCHO REEMPLAZO PUREAMBIENCE PRUEBAS\",\r\n  \"categoria_id\": 1,\r\n  \"clase_id\": 1,\r\n  \"precio\": 999000,\r\n  \"stock\": 80,\r\n  \"activo\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar_Producto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"referencia\": \"AP25001\",\r\n  \"descripcion\": \"CARTUCHO REEMPLAZO PUREAMBIENCE PRUEBAS\",\r\n  \"categoria_id\": 1,\r\n  \"clase_id\": 1,\r\n  \"precio\": 899000,\r\n  \"stock\": 79,\r\n  \"activo\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/productos/ref/AP25001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"productos",
+						"ref",
+						"AP25001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar_Producto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/productos/ref/AP25001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"productos",
+						"ref",
+						"AP25001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar_Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios/admin1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios",
+						"admin1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear_Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"kelly_1996\",\r\n  \"nombre_completo\": \"Kelly Zapata Pruebas\",\r\n  \"password\": \"BeLeon2015*\",\r\n  \"rol_id\": 2\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar_Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre_completo\": \"Kelly Zapata Pruebas\",\r\n  \"password\": \"nuevaClave123\",\r\n  \"rol_id\": 2,\r\n  \"activo\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios/kelly_1996",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios",
+						"kelly_1996"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar_Usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/usuarios/kelly_1996",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"usuarios",
+						"kelly_1996"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar_Cliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear_Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"documento\": \"1234567890\",\r\n  \"id_tipodocumento\": \"CC\",\r\n  \"nombre_completo\": \"Laura Ramírez\",\r\n  \"sexo\": \"F\",\r\n  \"fecha_nacimiento\": \"1990-05-10\",\r\n  \"correo\": \"laura@example.com\",\r\n  \"telefono\": \"3105551234\",\r\n  \"id_departamento\": 5,\r\n  \"id_ciudad\": 12,\r\n  \"direccion\": \"Cra 45 #12-34\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar_Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id_tipodocumento\": \"CC\",\r\n  \"nombre_completo\": \"Laura Ramírez\",\r\n  \"sexo\": \"F\",\r\n  \"fecha_nacimiento\": \"1990-05-10\",\r\n  \"correo\": \"laura@example.com\",\r\n  \"telefono\": \"3105551234\",\r\n  \"id_departamento\": 5,\r\n  \"id_ciudad\": 12,\r\n  \"direccion\": \"Cra 45 #12-23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/1234567890",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"1234567890"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar_Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/clientes/1234567890",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"clientes",
+						"1234567890"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
